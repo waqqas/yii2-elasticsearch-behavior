@@ -1,6 +1,6 @@
 <?php
 
-namespace borales\behaviors\elasticsearch;
+namespace waqqas\behaviors\elasticsearch;
 
 use yii\base\Event;
 use yii\base\InvalidConfigException;
@@ -12,14 +12,14 @@ use yii\elasticsearch\Connection;
 
 /**
  * Yii2 behavior to support Elasticsearch indexing.
- * To use \borales\behaviors\elasticsearch\Behavior, insert the following code to your ActiveRecord class:
+ * To use \waqqas\behaviors\elasticsearch\Behavior, insert the following code to your ActiveRecord class:
  * ```
  *  public function behaviors()
  *  {
  *      return [
  *          ...
  *          'elasticsearch' => [
- *              'class' => '\borales\behaviors\elasticsearch\Behavior',
+ *              'class' => '\waqqas\behaviors\elasticsearch\Behavior',
  *              'mode' => 'command',
  *              'elasticIndex' => 'project-index',
  *              'elasticType' => 'posts',
@@ -42,7 +42,7 @@ use yii\elasticsearch\Connection;
  *  }
  * ```
  *
- * @link https://github.com/Borales/yii2-elasticsearch-behavior
+ * @link https://github.com/waqqas/yii2-elasticsearch-behavior
  * @author Borales <bordun.alexandr@gmail.com>
  * @version 0.0.1
  */
