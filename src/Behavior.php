@@ -118,7 +118,8 @@ class Behavior extends \yii\base\Behavior
                 ->insert($this->elasticIndex, $this->elasticType, $data, $this->getPK());
         } else {
             /** @var ActiveRecord $model */
-            $model = \Yii::createObject($this->elasticClass, $data);
+            $model = \Yii::createObject($this->elasticClass);
+            $model->attributes = $data;
             $model->save();
         }
     }
